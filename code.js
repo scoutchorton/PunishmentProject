@@ -21,15 +21,3 @@ function fadeInformation(iIndex) {
 	    window.tLock = false;
 	}
 }
-
-window.onLoad = function() {
-  var element = document.documentElement;
-  if(element.requestFullScreen) {
-    element.requestFullScreen();
-  } else if(element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if(element.webkitRequestFullScreen) {
-    element.webkitRequestFullScreen();
-  }
-  console.log("Going fullscreen.");
-}
